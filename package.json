@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "setup": "node ./lib/setup.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.17.1",
@@ -29,6 +30,7 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
+    "jest": "^30.2.0",
     "prettier": "3.6.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.0"
