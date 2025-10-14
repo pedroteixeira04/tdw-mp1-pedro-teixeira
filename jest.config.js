@@ -22,7 +22,14 @@ module.exports = {
   moduleFileExtensions: ["js", "jsx", "ts", "tsx"],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}", "!**/node_modules/**"],
+  collectCoverageFrom: [
+    "app/**/*.{js,jsx,ts,tsx}",
+    "!app/test/**",
+    "!app/**/index.{js,ts}",
+    "!app/**/*.d.ts",
+    "!**/node_modules/**",
+  ],
+
   coverageDirectory: "coverage",
   coverageReporters: ["text", "lcov"],
 };
