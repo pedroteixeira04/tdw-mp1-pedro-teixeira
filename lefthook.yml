@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: Lint staged files
+      run: npx eslint {staged_files}
+      glob: "*.{js,ts,jsx,tsx}"
+
+    - name: Run Jest with coverage
+      run: npm test -- --coverage
