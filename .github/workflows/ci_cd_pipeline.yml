@@ -5,8 +5,9 @@ on:
     branches: ['*']
   repository_dispatch:
     types: [cms-update]
-  schedule:
-    - cron: '0 0 * * *'
+  
+  # schedule:
+  #   - cron: '0 0 * * *'
 
 jobs:
   setup:
