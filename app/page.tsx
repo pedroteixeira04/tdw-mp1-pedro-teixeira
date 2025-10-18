@@ -53,15 +53,13 @@ function HeroPost({
 }) {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
+      <div className="mb-8 md:mb-16 transition-transform duration-300 hover:scale-105">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight font-semibold text-[#5EFF8C]">
-            <Link href={`/posts/${slug}`} className="hover:underline">
-              {title}
-            </Link>
+          <h3 className="inline-block mb-4 text-4xl lg:text-6xl leading-tight font-semibold text-[#5EFF8C] transition-transform duration-300 hover:scale-110">
+            <Link href={`/posts/${slug}`}>{title}</Link>
           </h3>
           <div className="mb-4 md:mb-0 text-lg text-white">
             <Date dateString={date} />

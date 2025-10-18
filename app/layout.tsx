@@ -24,13 +24,14 @@ function Footer() {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
               href="https://nextjs.org/docs"
-              className="mx-3 bg-[#5EFF8C] hover:border-2 hover:border-[#5EFF8C] hover:bg-[#214889] hover:text-[#5EFF8C] text-[#214889] font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-lg"
+              className="mx-3 bg-[#5EFF8C] border-2 border-transparent hover:border-[#5EFF8C] hover:bg-[#214889] hover:text-[#5EFF8C] text-[#214889] font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-lg"
             >
               Saber mais sobre Next.js
             </a>
+
             <a
               href={`https://github.com/TDW-2025/MP1`}
-              className="mx-3 font-bold hover:underline text-[#5EFF8C]"
+              className="mx-3 font-bold transition-transform duration-300 hover:scale-110 text-[#5EFF8C]"
             >
               Ver exemplo no GitHub
             </a>
