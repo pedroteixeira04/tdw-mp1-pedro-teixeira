@@ -3,8 +3,8 @@ import { Space_Grotesk } from "next/font/google";
 import { EXAMPLE_PATH, CMS_NAME } from "@/lib/constants";
 
 export const metadata = {
-  title: `Next.js and ${CMS_NAME} Example`,
-  description: `This is a blog built with Next.js and ${CMS_NAME}.`,
+  title: `Blog de Viagens`,
+  description: `Este blog foi desenvolvido com Next.js e ${CMS_NAME}.`,
 };
 
 const spaceGrotesk = Space_Grotesk({
@@ -24,7 +24,7 @@ function Footer() {
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
               href="https://nextjs.org/docs"
-              className="mx-3 bg-[#5EFF8C] hover:bg-white text-[#214889] font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-lg"
+              className="mx-3 bg-[#5EFF8C] hover:border-2 hover:border-[#5EFF8C] hover:bg-[#214889] hover:text-[#5EFF8C] text-[#214889] font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-lg"
             >
               Saber mais sobre Next.js
             </a>
