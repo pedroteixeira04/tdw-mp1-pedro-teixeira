@@ -28,8 +28,8 @@ export default async function PostPage({
 
   return (
     <div className="container mx-auto px-5">
-      <h2 className="mb-20 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-        <Link href="/" className="hover:underline text-[#5EFF8C]">
+      <h2 className="inline-block mb-20 mt-8 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter transition-transform duration-300 hover:scale-110">
+        <Link href="/" className="text-[#5EFF8C]">
           Blog de Viagens.
         </Link>
       </h2>

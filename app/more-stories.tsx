@@ -20,14 +20,11 @@ function PostPreview({
 }) {
   return (
     <div>
-      <div className="mb-5">
+      <div className="mb-5 transition-transform duration-300 hover:scale-105">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link
-          href={`/posts/${slug}`}
-          className="hover:underline text-[#5EFF8C] font-semibold"
-        >
+      <h3 className="inline-block text-3xl mb-3 leading-snug transition-transform duration-300 hover:scale-125">
+        <Link href={`/posts/${slug}`} className="text-[#5EFF8C] font-semibold">
           {title}
         </Link>
       </h3>
