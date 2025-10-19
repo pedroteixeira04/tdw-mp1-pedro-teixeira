@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
-        run: npm ci # <-- Garante que as dependências existem
+        run: npm ci 
       - name: Run Prettier check
         run: npx prettier --check "**/*.{js,ts,jsx,tsx,css,md,json}"
 
@@ -125,6 +125,9 @@ jobs:
     env:
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+      CONTENTFUL_PREVIEW_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PREVIEW_ACCESS_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
