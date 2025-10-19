@@ -4,7 +4,7 @@ import { EXAMPLE_PATH, CMS_NAME } from "@/lib/constants";
 
 export const metadata = {
   title: `Blog de Viagens`,
-  description: `Este blog foi desenvolvido com Next.js e ${CMS_NAME}.`,
+  description: `Este projeto foi desenvolvido com Next.js e ${CMS_NAME}.`,
 };
 
 const spaceGrotesk = Space_Grotesk({
